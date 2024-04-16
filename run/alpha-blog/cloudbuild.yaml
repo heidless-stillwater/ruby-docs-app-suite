@@ -1,6 +1,6 @@
 # [START cloudrun_rails_cloudbuild]
 steps:
-  - id: "build image"
+  - id: "build image - TEST"
     name: "gcr.io/cloud-builders/docker"
     entrypoint: 'bash'
     args: ["-c", "docker build --build-arg MASTER_KEY=$$RAILS_KEY -t gcr.io/${PROJECT_ID}/${_SERVICE_NAME} . "]
