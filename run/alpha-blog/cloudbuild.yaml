@@ -1,6 +1,6 @@
 # [START cloudrun_rails_cloudbuild]
 steps:
-  - id: "build image - TEST"
+  - id: "build image"
     name: "gcr.io/cloud-builders/docker"
     entrypoint: 'bash'
     args: ["-c", "docker build --build-arg MASTER_KEY=$$RAILS_KEY -t gcr.io/${PROJECT_ID}/${_SERVICE_NAME} . "]
@@ -22,8 +22,8 @@ steps:
 
 substitutions:
   _REGION: europe-west2
-  _SERVICE_NAME: alpha_blog_svc
-  _INSTANCE_NAME: alpha_blog_instance-0
+  _SERVICE_NAME: alpha-blog-svc
+  _INSTANCE_NAME: alpha-blog-instance-0
   _SECRET_NAME: alpha_blog_secret
 
 availableSecrets:
