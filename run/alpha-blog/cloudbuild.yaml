@@ -21,10 +21,10 @@ steps:
     secretEnv: ["RAILS_KEY"]
 
 substitutions:
-  _REGION: us-central1
-  _SERVICE_NAME: rails-cat-album
-  _INSTANCE_NAME: cat-album
-  _SECRET_NAME: rails-master-key
+  _REGION: europe-west2
+  _SERVICE_NAME: alpha_blog_svc
+  _INSTANCE_NAME: alpha_blog_instance-0
+  _SECRET_NAME: alpha_blog_secret
 
 availableSecrets:
   secretManager:
