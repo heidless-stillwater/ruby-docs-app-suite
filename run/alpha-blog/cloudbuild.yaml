@@ -24,7 +24,7 @@ substitutions:
   _REGION: europe-west2
   _SERVICE_NAME: alpha-blog-svc
   _INSTANCE_NAME: alpha-blog-instance-0
-  _SECRET_NAME: alpha_blog_secret
+  _SECRET_NAME: alpha-blog-secret
 
 availableSecrets:
   secretManager:
