@@ -30,7 +30,8 @@ For more Cloud Run samples beyond Ruby, see the main list in the [Cloud Run Samp
 
     ```sh
     # Replace <sample> with the sample name, ie 'helloworld'
-    export SAMPLE=<sample>
+    export RAILS_ENV=development
+    export SAMPLE=rails
     cd $SAMPLE
     docker build --tag $SAMPLE .
     ```
@@ -41,6 +42,9 @@ For more Cloud Run samples beyond Ruby, see the main list in the [Cloud Run Samp
 
     ```sh
     PORT=8080 && docker run --rm -p 8080:${PORT} -e PORT=${PORT} $SAMPLE
+
+    # view site at 
+    http://127.0.0.1:8080/
     ```
 
     Overriding the built container with local code:
